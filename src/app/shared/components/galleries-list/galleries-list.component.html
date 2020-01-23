@@ -1,0 +1,5 @@
+<div class="galleries-list d-flex flex-wrap fadeIn animated">
+    <div class="gallery" *ngFor="let gallery of galleries; trackBy: trackByFunction">
+      <app-gallery [gallery]="gallery" [editable]="editable" (deleted)="onGalleryDelete($event)" (edited)="onGalleryEdit($event)"></app-gallery>
+    </div>
+</div>

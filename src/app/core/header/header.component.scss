@@ -1,0 +1,34 @@
+
+
+.logout-button {
+  display: none;
+}
+
+.avatar-dropdown {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .avatar-dropdown {
+    display: none;
+  }
+
+  .logout-button {
+    display: block;
+  }
+}
+ul{
+  color: white;
+}
+a.nav-link.waves-light {
+  color: white!important;
+  transition: .35s;
+}
+
+a.nav-link.waves-light.active {
+  color: black!important;
+  transition: .35s;
+}
+.nav-link.waves-light mdbicon{
+  color: white;
+}

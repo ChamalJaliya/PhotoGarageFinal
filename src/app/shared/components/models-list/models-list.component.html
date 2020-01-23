@@ -1,0 +1,5 @@
+<div class="models-list d-flex flex-wrap fadeIn animated">
+    <div class="model" *ngFor="let model of models; trackBy: trackByFunction">
+      <app-model [model]="model" [editable]="editable" (deleted)="onModelDelete($event)" (edited)="onModelEdit($event)"></app-model>
+    </div>
+</div>
